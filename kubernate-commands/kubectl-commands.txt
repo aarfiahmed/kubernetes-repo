@@ -1,0 +1,20 @@
+-- to see the node details
+   kubectl get node
+   
+- To on which node your pod is created
+    kubectl get pods -o wide
+	
+-- To see the resource details
+     kubectl explain pods|less
+
+-- to create pod
+   kubectl run mypod --generator=run-pod/v1 --image=rest-service:latest
+   
+-- to add watch, it will show the display if is there any change.
+    kubect get <RESOURCE-TYPE> -w
+	kubectl get pods -w
+	
+-- to delete resource  
+     kubectl delete <RESOURCE-TYPE> yourResourceName 
+	 kubectl delete pods mypod
+	 

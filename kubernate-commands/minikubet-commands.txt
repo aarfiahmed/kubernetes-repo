@@ -1,0 +1,8 @@
+1)To get the cluster ip
+   minikube ip
+   
+2) to go inside the minikube
+    minikube ssh
+	
+3) to show dashboard
+    minikube dashboard

@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+ name: getconfigservice
+spec:
+ selector:
+  app: configpod
+ ports:
+  - protocol: TCP
+    port: 9191
+    nodePort: 31112
+ type: NodePort   
+ 

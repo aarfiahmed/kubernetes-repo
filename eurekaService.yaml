@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+ name: eurekaservice
+
+spec:
+ selector:
+  app: eurekapod
+ ports:
+  - protocol: TCP
+    port: 8761
+    nodePort: 31113
+ type: NodePort   
